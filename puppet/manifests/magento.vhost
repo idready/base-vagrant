@@ -1,0 +1,27 @@
+NameVirtualHost *:9000
+
+<VirtualHost *:80>
+  DocumentRoot "/var/www/"
+  ServerName dev-site.fr
+  
+  <Directory /var/www/>
+    AllowOverride All
+  </Directory>
+
+  ErrorLog "/var/log/apache2/dev-site.error.log"
+  CustomLog "/var/log/apache2/dev-site.access.log" common
+  
+</VirtualHost>
+
+<VirtualHost *:9000>
+  DocumentRoot "/var/www/"
+  ServerName dev-site.fr
+  
+  <Directory /var/www/>
+    AllowOverride All
+  </Directory>
+
+  ErrorLog "/var/log/apache2/dev-site.error.log"
+  CustomLog "/var/log/apache2/dev-site.access.log" common
+  
+</VirtualHost>
